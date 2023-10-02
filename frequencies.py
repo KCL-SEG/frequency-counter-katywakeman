@@ -13,7 +13,5 @@ def frequencies(items):
             count = count + 1
       duplicates[str(items[i])] = count
       count = 0
-      for key,value in duplicates.items():
-        if value not in frequencies.values():
-          frequencies[key] = value
-    return frequencies
+      
+    return duplicates
